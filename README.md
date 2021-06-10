@@ -17,5 +17,4 @@ Incursione en librerias de edicion de formatos como lo es @taglib, como también
     Servlets
     Hibernate maven plugin
 
-
-Apunte el navegador en http: //localhost: 8080/Control_de_clientes/index.jsp
+Apunte el navegador en http: //localhost:8080/Control_de_clientes/index.jsp
