@@ -2,9 +2,18 @@
 Aplicacion web para el control de clientes deudores
 
 ## Propósito
-Proporcione una aplicación web con un diseño MVC, para el control de clientes deudores, la cual cuenta con un CRUD en java, que te permite hacer las 4 operaciones con facilidad.
+ESte proyecto esta basado en una estructura cliente(peticiones)-servlet(controlador-MVC)-datos(logica DAO, DTO o VO)
 
-El diseño esta implementado con el framework de boostrap, posee una capa cliente, una capa servlets controladora y una capa logica de datos.
+
+Al cargar la app hace refresh y llama al servletcontrolador, el controlador a su vez hace un redireccionamiento hacia en jspclientes
+observamos la informacion de la base de datos, conectando asi correctamente las capas de la app (desde la capa de presentación aplicando mvc, en el servlet controlador 
+solamente recuperamos la información de la capa de dtos apoyandonos de la clase cliente jdbc y regresando un listado de objetos de tipo cliente
+aplicando el patron de diseño DTO(data transfer object) o Value Object) 
+esta informacion que se ha recuperado se comparte en algun alcance y se reenvia la información hacia el jsp clientes.
+
+Con un diseño MVC control de clientes deudores, cuenta con un CRUD en java, que te permite hacer las 4 operaciones con facilidad.
+
+El diseño esta implementado con el framework de boostrap.
 
 Incursione en librerias de edicion de formatos como lo es @taglib, como también reforse el uso de sessiones, envio y recepcion de datos por medio de request y response con los servlets, y el expression languaje para interactuar con los datos sin importar el alcance de los atributos.
 
